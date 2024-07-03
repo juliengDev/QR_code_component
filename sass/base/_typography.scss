@@ -2,16 +2,24 @@
 
 body {
   font-family: Outfit, sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.7;
+  letter-spacing: 0.019rem;
   font-weight: 400;
   color: #555;
 }
 
-.heading-primary {
-  color: var(--color-primary);
+.heading {
+  color: var(--color-primary-dark-navy);
+  letter-spacing: 0;
+  font-size: 2.2rem;
+  padding: 0 1.6rem 1.6rem 1.6rem;
 }
-
+.text {
+  color: var(--color-grey);
+  font-size: 1.5rem;
+  padding: 0 1.6rem;
+}
 /*
 SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128

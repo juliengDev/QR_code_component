@@ -17,19 +17,12 @@ ORDER: Base + typography > general layout + grid > page layout > components
 */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 :root {
-  --color-primary: #55c57a;
-  --color-primary-light: #7ed56f;
-  --color-primary-dark: #28b485;
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-  --shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
-  --line: 1px solid var(--color-grey-light-2);
+  --color-primary: #2c7dfa;
+  --color-primary-shade: #3685ff;
+  --color-primary-dark-navy: #1f314f;
+  --color-grey: #7d889e;
+  --color-light-grey: #d5e1ef;
+  --color-white: #ffffff;
 }
 
 * {
@@ -41,6 +34,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+  background-color: var(--color-light-grey);
 }
 
 html {
@@ -72,14 +72,24 @@ FONT SIZE SYSTEM (px)
 */
 body {
   font-family: Outfit, sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   line-height: 1.7;
+  letter-spacing: 0.019rem;
   font-weight: 400;
   color: #555;
 }
 
-.heading-primary {
-  color: var(--color-primary);
+.heading {
+  color: var(--color-primary-dark-navy);
+  letter-spacing: 0;
+  font-size: 2.2rem;
+  padding: 0 1.6rem 1.6rem 1.6rem;
+}
+
+.text {
+  color: var(--color-grey);
+  font-size: 1.5rem;
+  padding: 0 1.6rem;
 }
 
 /*
@@ -89,5 +99,52 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+.centered-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered-div2 {
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+}
+
+.centered-div3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 8rem;
+  max-width: 32rem;
+  background-color: var(--color-white);
+  border-radius: 2rem;
+}
+
+.content {
+  margin: 0 1.6rem 4rem 1.6rem;
+  text-align: center;
+}
+
+.qrcode {
+  margin: 1.6rem 1.6rem 2.4rem 1.6rem;
+  border-radius: 2rem;
+}
+
+.attribution {
+  margin-top: 12rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
 /*# sourceMappingURL=style.css.map */
