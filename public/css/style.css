@@ -112,7 +112,6 @@ FONT SIZE SYSTEM (px)
   border-radius: 2rem;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
   text-align: center;
-  min-width: 32rem;
 }
 
 .content {
@@ -123,6 +122,8 @@ FONT SIZE SYSTEM (px)
 .qrcode {
   margin: 1.6rem 1.7rem 2.4rem 1.6rem;
   border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
 }
 
 .attribution {
